@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /*body { margin: 0px 20px; }*/
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .bgimg {background-image: url('images/bg-hero-desktop.svg');  }
+      .display-inline {display: inline;}
+      .sign-up-button {  margin-left: 80% ; margin-top: -10px; text-transform: uppercase; width: 10%;  background-color: white; margin-bottom: 10%; }
+      div.top-div { margin: 0px 10px; }
+      div.inner-top-div { width: 100%; }
+      div.bottom-top-div { display: flex;}
+      .join , .header-image ,.box-image { width: 50%; padding: 10px; font-family:monospace; }
+      img { max-width: 100%; }
+      .headline { font-size: 2rem; font-weight: bold; text-align: left;}
+      .join-button { display:block; background-color: pink; color: black; font-size: 1.2rem; border-radius: 30%; margin: 30px auto;}
+      .main-content { display: flex;flex-direction: column; margin: 10px 10px; }
+      .box {display:flex; width:80%; flex-direction: row; border: .1px solid grey; box-shadow: 0px 0px 10px grey;margin: 20px auto; padding: 10px;}
+      .about-content, .box-img { width: 50%; max-width: 100%; margin: 15% 0; text-align: center; font-size: 2rem}
+      .headline-description {font-family: monospace; font-size: 1.2rem; text-align: left;}
+      footer { background-color:hsl(192, 100%, 9%); color: white; padding: 5% 10%; z-index: 1; margin-top: 100px;}
+      div.container {display: flex; flex-direction: row;}
+      .footer-about {display: flex; flex-direction: column; width: 50%;  margin: 10% auto; font-size: 1.2rem;}
+      .footer-box { display: flex; flex-direction: row; flex-wrap: wrap; margin-top: 20%; width: 50%; font-size: 1.2rem;}
+      .footer-box b {width: 50%;}
+      .last {width: 50%; margin: 10px auto; margin-top: -140px; text-align: center; border: .1px solid grey; box-shadow: 0px 0px 10px grey; z-index: 0; background-color: white; color: black; padding: 5px;}
+
+      @media screen and (max-width: 375px) {
+        div.bottom-top-div { flex-direction: column; font-size: 10px;}
+        .box {flex-direction: column;}
+        .join,.header-image,.about-content,.box-image { width: 100%; }
+        .headline {font-size: 1.2rem;}
+        .headline-description { font-size: .8rem; }
+        .last { margin-top: -80px; font-size: .8rem; padding: 5px; width: 80%;}
+        .top-img { max-width: 50%; }
+        .sign-up-button {margin-left: 70%; width: 20%; border-radius: 30px;}
+        div.container {flex-direction: column; width: 90%;}
+        .footer-about { flex-direction: column; width: 90%; }
+        .footer-box {flex-direction: column; width: 90%; line-height: 1.2rem; margin-top: -20px;padding-left: 10px;}
+        .footer-box b {width: 100%; line-height: 1.2rem;}
+      }
+  </style>
+</head>
+<body>
+
+    <header class="bgimg header">
+      <div class="top-div">
+        <div class="inner-top-div"> 
+          <img src="images/logo.svg" class="display-inline top-img">
+          <button class="sign-up-button" class="display-inline">sign up</button>
+        </div>
+        <div class="bottom-top-div">
+          <div class="join">
+            <p class="headline">BUILD THE COMMUNITY YOUR FANS WILL LOVE</p>
+            <p class="headline-description"> we listen you everytime. We will bring the best products to you and it will be a good experience  </p>
+            <button class="join-button"> Get started for free</button>
+          </div>
+        <div class="header-image">
+          <img src="images/illustration-mockups.svg">
+        </div>
+      </div>
+    </div> 
+  </header>
+
+  <!-- main content starts here i.e. body content -->
+
+<div class="main-content">
+  <div class="box">
+    <div class="about-content">
+      <p class="headline">Grow Together</p>
+      <p class="headline-description">Generate meaningful discussion and engage with some cuttinge edge persons and community</p>
+    </div>
+    <div class="box-image">
+      <img src="images/illustration-grow-together.svg">
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-image">
+      <img src="images/illustration-flowing-conversation.svg">
+    </div>
+    <div class="about-content">
+      <p class="headline">Flowing conversations</p>
+      <p class="headline-description">Join our threads and look at the real life conversation to follow. Join us and do well.</p>
+    </div>
+  </div>
+  <div class="box ">
+    <div class="about-content">
+      <p class="headline">Our users</p>
+      <p class="headline-description">We take care of our users rights very serioiusly and we take them to the data laws available.</p>
+    </div>
+    <div class="box-image">
+      <img src="images/illustration-your-users.svg">
+    </div>
+  </div>
+</div>
+
+<!-- casual floating div -->
+
+
+
+<footer class="footer">
+  <div class="last">
+  <p class="headline">Ready to build your community</p>
+  <button class="join-button">Join for free</button>
+</div>
+
+  <div class="container">
+    
+    <div class="footer-about display-inline">
+      <img src="images/logo.svg" width="200px" height="100px">
+      <p>
+        please feel free to contact me if required and follow me up in twitter.
+      </p>
+      <p>
+        Phone no. 8191044281
+      </p>
+      <p>
+        mail: sdhami4410@gmail.com
+      </p>
+    </div>
+    <div class="footer-box display-inline">
+      <b>About us</b> <b> Contact us</b>
+      <b>What do we do</b> <b>career</b>
+      <b>Blog</b> <b>FAQ</b>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
